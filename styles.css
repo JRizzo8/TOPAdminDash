@@ -1,0 +1,29 @@
+/*initial grid to define webpage layout */
+main-grid{
+    display: grid;
+    grid-template: clamp(100px, 25%, 150px) 1fr /  clamp(100px, 30%, 200px) 1fr;
+    height: 100vh;
+    width: auto;
+}
+
+
+/*styling for header */
+header-grid{
+    /*grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 1/2/2/3;
+    background-color: white;
+}
+
+
+/*styling for sidebar */
+sidebar-grid{
+    grid-area: 1/1/3/2;
+    background-color: royalblue;
+}
+
+
+/*styling for dashboard */
+dashboard-grid{
+    grid-area: 2/2/3/3;
+    background-color: lightgray;
+}
