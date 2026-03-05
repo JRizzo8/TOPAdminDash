@@ -9,55 +9,146 @@
 </head>
 <body>
     <Main-grid>
-        <header-grid>
-
-        </header-grid>
-        <sidebar-grid>
+        <header-container>
+                <div class="search-item">
+                    <img class="srchIcon" src="icons/magnify.svg" alt="Search" />
+                    <input type="text" class="search-bar" />
+                </div>
+                <div class="smolProfile">
+                    <img class="notifications" src="icons/bell-ring.svg" alt="notifications" />
+                    <img class="smolProfilePic" src="icons/knight.jpg" alt="profile pic" />
+                    <h3 class="smolProfileName">John Doe</h3>
+                </div>
+                <div class="bigProfile">
+                    <img class="bigProfilePic" src="icons/knight.jpg" alt="profile pic" />
+                    <div class="bigProfileText">
+                        <p id="BPT1">Hi there,</p>
+                        <h2 id="BPTH2"class="bigProfileName">John Doe (@DoeEyedJohn)</h2>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <button class="header-btn">New</button>
+                    <button class="header-btn">Upload</button>
+                    <button class="header-btn">Share</button>
+                </div>
+        </header-container>
+        <sidebar-container>
             <div class="navItem home-button">
-                <img class="dashIcon" src="" />
+                <img class="dashboardIcon" src="icons/DashBoardLogo.svg" />
                 <h1>Dashboard</h1>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/homelogo.svg" />
                 <p>Home</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/profilelogo.svg" />
                 <p>Profile</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/messageslogo.svg" />
                 <p>Messages</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/historylogo.svg" />
                 <p>History</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/taskslogo.svg" />
                 <p>Tasks</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/communitylogo.svg" />
                 <p>Communities</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/settingslogo.svg" />
                 <p>Settings</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/settingslogo.svg" />
                 <p>Support</p>
             </div>
             <div class="navItem">
-                <img class="navIcon" src="" />
+                <img class="navIcon" src="icons/privacylogo.svg" />
                 <p>Privacy</p>
             </div>
         
-        </sidebar-grid>
-        <dashboard-grid>
+        </sidebar-container>
+        <dashboard-container>
+            <project-grid>
+                
+                <div class="prj-card" id="cool-prj">
+                    <h1>Super Cool Project</h1>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, 
+                        id facilisis felis accumsan nec.</p>
+                    <div class="card-btns">
+                        <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                        <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                        <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                    </div>
+                </div>
+                <div class="prj-card" id="cool-prj">
+                    <h1>Super Cool Project</h1>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, 
+                        id facilisis felis accumsan nec.</p>
+                    <div class="card-btns">
+                        <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                        <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                        <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                    </div>
+                </div> 
+                <div class="prj-card" id="cool-prj">
+                        <h1>Super Cool Project</h1>
+                        <p>Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, 
+                            id facilisis felis accumsan nec.</p>
+                        <div class="card-btns">
+                            <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                            <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                            <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                        </div>
+                </div> 
+                <div class="prj-card" id="cool-prj">
+                    <h1>Super Cool Project</h1>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, 
+                        id facilisis felis accumsan nec.</p>
+                    <div class="card-btns">
+                        <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                        <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                        <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                    </div>
+                </div> 
+                <div class="prj-card" id="cool-prj">
+                    <h1>Super Cool Project</h1>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, 
+                        id facilisis felis accumsan nec.</p>
+                    <div class="card-btns">
+                        <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                        <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                        <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                    </div>
+                </div> 
+                <div class="prj-card" id="cool-prj">
+                    <h1>Super Cool Project</h1>
+                    <p>Sed tempus ut lacus ut scelerisque.
+                        Suspendisse sollicitudin nibh erat, 
+                        id facilisis felis accumsan nec.</p>
+                    <div class="card-btns">
+                        <img class="crd-btn1, cardicon" src="icons/card-star-btn.svg" />
+                        <img class="crd-btn2, cardicon" src="icons/card-eye-btn.svg" />
+                        <img class="crd-btn3, cardicon" src="icons/card-fork-icon.svg" />
+                    </div>
+                </div>
+            </project-grid>
+            <feed-grid>
 
-        </dashboard-grid>
+            </feed-grid>           
+        </dashboard-container>
     </Main-grid>
     
 </body>

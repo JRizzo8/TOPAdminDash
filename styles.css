@@ -1,6 +1,7 @@
 /*initial grid to define webpage layout */
 main-grid{
     display: grid;
+    /* grid-template: grid columns / grid rows */
     grid-template: clamp(100px, 25%, 150px) 1fr /  clamp(100px, 30%, 200px) 1fr;
     height: 100vh;
     width: auto;
@@ -8,22 +9,193 @@ main-grid{
 
 
 /*styling for header */
-header-grid{
+header-container{
     /*grid-area: row-start / column-start / row-end / column-end; */
     grid-area: 1/2/2/3;
     background-color: white;
+    padding-top: 10px;
+    display: grid;
+    grid-template-rows: clamp(50px, 1fr, 100px) clamp(50px, 1fr, 100px);
+    grid-template-areas: 
+    "search-bar smolProfile"
+    "bigProfile header-controls";
+
+    
+}
+.search-item{
+    grid-area: search-bar;
+    gap: 10px;
+    padding-left: 30px;
+}
+.smolProfile{
+    grid-area: smolProfile;
+    gap: 30px;
+    justify-self: flex-end;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+.smolProfilePic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.smolProfileName{
+    font-weight: bold;
+    font-size: 20px;
+}
+.bigProfile{
+    grid-area: bigProfile;
+    padding-left: 30px;
+    justify-self: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bigProfilePic{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+#BPTH2{
+    font-weight: bold;
+    font-size: 24px;
+}
+#BPT1{
+    font-size: 12px;
+    font-weight: bold;
+}
+.header-controls{
+    grid-area: header-controls;
+    justify-self: end;
+    gap: 30px;
+    padding-right: 30px;
+}
+.header-btn{
+    border: none;
+    border-radius: 25px;
+    background-color: royalblue;
+    color: white;
+    width: 90px;
+    height: 35px;
+}
+.search-bar{
+    border-radius: 15px;
+    border: none;
+    background-color: lightgrey;
+    width: 100%;
+    height: 25px;
+}
+
+.smolProfile, .bigProfile, .search-item, .header-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.srchIcon, .notifications {
+    width: 20px;
+    height: 20px;
 }
 
 
 /*styling for sidebar */
-sidebar-grid{
+sidebar-container{
     grid-area: 1/1/3/2;
     background-color: royalblue;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+}
+sidebar-container h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+sidebar-container p{
+    font-size: 18px;
+}
+.dashboardIcon{
+    filter: invert(1);
+    width: 45px;
+    height: 45px;
+}
+.navIcon{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+.navItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+sidebar-container div:not(.home-button){
+    margin-left: 25px;
+    margin-top: 10px;
+    gap: 20px;
+}
+.home-button{
+    margin-top: 20px;
+    margin-left: 15px;
+    gap: 10px;
+}
+sidebar-container div:nth-child(2){
+    margin-top: 30px;
+}
+sidebar-container div:nth-child(8){
+    margin-top: 40px;
 }
 
 
+
 /*styling for dashboard */
-dashboard-grid{
+dashboard-container{
     grid-area: 2/2/3/3;
     background-color: lightgray;
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    grid-template-areas:
+    "projects feed";
+}
+project-grid{
+    display: grid;
+     
+}
+.prj-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  -5px 0 0px orange;
+    border-radius: 4%;
+}
+.prj-card p{
+    font-size: 14px;
+    padding-left: 10px;
+
+}
+.prj-card h1{
+    font-weight: bolder;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.card-btns{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 10px;
+    padding-bottom:10px;
+   
+}
+.cardicon{
+    width: 20px;
+    height: 20px;
 }
