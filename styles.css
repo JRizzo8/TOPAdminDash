@@ -2,7 +2,7 @@
 main-grid{
     display: grid;
     /* grid-template: grid columns / grid rows */
-    grid-template: clamp(100px, 25%, 150px) 1fr /  clamp(100px, 30%, 200px) 1fr;
+    grid-template: clamp(150px, 25%, 200px) 1fr /  clamp(100px, 30%, 200px) 1fr;
     height: 100vh;
     width: auto;
 }
@@ -164,6 +164,7 @@ dashboard-container{
 }
 project-grid{
     display: grid;
+    grid-template-columns: 1fr 1fr;
      
 }
 .prj-card{
