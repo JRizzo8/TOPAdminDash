@@ -159,44 +159,149 @@ dashboard-container{
     background-color: lightgray;
     display: grid;
     grid-template-columns: 75% 1fr;
-    grid-template-areas:
-    "projects feed";
 }
+/*styling for project card section */
 project-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr;
+    padding-top: 25px;
+    padding-right: 10px;
      
 }
-.prj-card{
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+prj-title{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    font-size: 24px;
+    font-weight: 400;
+}
+prj-card{
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow:  -5px 0 0px orange;
     border-radius: 4%;
 }
-.prj-card p{
+prj-card p{
     font-size: 14px;
     padding-left: 10px;
 
 }
-.prj-card h1{
+prj-card h1{
     font-weight: bolder;
     font-size: 18px;
     padding-top: 15px;
     padding-left: 10px;
 }
-.card-btns{
+card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+card-btns{
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
-    justify-self: flex-end;
     justify-content: flex-end;
     gap: 20px;
-    padding-right: 10px;
-    padding-bottom:10px;
+    padding-right: 20px;
+    padding-bottom:30px;
    
 }
 .cardicon{
     width: 20px;
     height: 20px;
+}
+/* styling for feed card section */
+
+feed-grid{
+    display: grid;
+    grid-template-rows: 30px 1fr 50px 1fr;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+}
+feed-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+trending-title{
+    font-size: 24px;
+    font-weight: 400;
+    align-self: flex-end;
+    padding-bottom: 5px;
+    
+    
+}
+
+/* styles for announcements and trending section */
+
+announcements-card{
+    border-radius: 4%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    
+
+}
+hr{
+    width: 100%;
+}
+announcements-card h2{
+    font-weight: bolder;
+}
+announcements-card p{
+    font-size: 12px;
+}
+.announcement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+
+}
+
+trending-card{
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    
+}
+trending-profile{
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+}
+
+.trend-profile-pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
